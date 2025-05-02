@@ -32,32 +32,6 @@ Blowfish is a lightweight, configurable implementation of the Blowfish encryptio
 
 ## 📦 Available Functions
 
-### 📃 Block and Text Conversion
-
-**`char* blocks_to_text(uint32_t bytes[], int block_length)`**
-
-Converts an array of 32-bit blocks back into a character string.
-
-- **Parameters:**
-  - `bytes[]`: Array of `uint32_t` blocks.
-  - `block_length`: Number of 32-bit blocks.
-- **Returns:**  
-  Pointer to a null-terminated character string.
-
----
-
-**`uint32_t* text_to_blocks(char text[], int length)`**
-
-Converts a character string into an array of 32-bit blocks, padding as needed.
-
-- **Parameters:**
-  - `text[]`: Input string.
-  - `length`: Length of the input string.
-- **Returns:**  
-  Pointer to an array of 32-bit blocks.
-
----
-
 ### 🔐 Key Management
 
 **`uint8_t fish_set_key(uint8_t key[], int length)`**
